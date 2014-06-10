@@ -1,1 +1,17 @@
+#!/usr/bin/env node
 
+(function() {
+  require('coffee-script/register');
+  var argv = require('minimist')(process.argv.slice(2));
+
+  var main = require('../lib/main');
+  var name = argv['_'][0];
+  var cmd = main(name);
+  if (cmd) {
+    console.log(cmd);
+    process.exit(0);
+  } else {
+    console.error('unable to find \'' + name + '\'');
+    process.exit(1);
+  }
+}).call(this);
