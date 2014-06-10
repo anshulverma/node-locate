@@ -1,0 +1,49 @@
+{
+  "name": "node-locate",
+  "version": "0.0.1",
+  "main": "./bin/nlocate",
+  "preferGlobal": "true",
+  "description": "Locate commands by searching through local node_modules and system path",
+  "private": false,
+  "author": "Anshul Verma <anshul.verma86@gmail.com>",
+  "maintainers": [
+    "Anshul Verma <anshul.verma86@gmail.com>"
+  ],
+  "scripts": {
+    "test": "cake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anshulverma/node-locate"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  },
+  "bundledDependencies": [],
+  "keywords": [
+    "cli",
+    "nlocate",
+    "install",
+    "package",
+    "tools",
+    "coffee-script",
+    "cake"
+  ],
+  "bin": {
+    "nlocate": "./bin/nlocate"
+  },
+  "engines": {
+    "node": ">= 0.8.x",
+    "npm": ">= 1.1.65"
+  },
+  "directories": {
+    "man": "./man",
+    "doc": "./doc",
+    "lib": "./lib",
+    "bin": "./bin"
+  }
+}
