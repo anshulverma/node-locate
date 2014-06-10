@@ -1,2 +1,2 @@
 global.assert = require('chai').assert
-global.nlocate = require '../lib/main'
+global.locate = require '../lib/main'
