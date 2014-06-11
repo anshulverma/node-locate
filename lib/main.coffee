@@ -15,6 +15,6 @@ module.exports = (name, options) ->
 
   localPath = options.localPath || resolve __dirname, '../node_modules/.bin'
   cmdPath = resolve localPath, name
-  return localPath if existsSync cmdPath
+  return cmdPath if existsSync cmdPath
 
   throw new Error "'#{name}' not found"
