@@ -1,8 +1,12 @@
 # Temporary files
 -*~
+-*#*
 
 # No js tests
 -test/*.js
 
 # Not including lib files
 -/node_modules/
+
+# Tag maps
+-*.map
