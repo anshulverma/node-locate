@@ -5,7 +5,7 @@ SEPARATOR = ':'
 
 module.exports = (name, options) ->
   options = options || {}
-  
+
   sysPath = process.env.PATH
   throw new Error 'system path node set' if !sysPath
 
