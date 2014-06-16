@@ -5,3 +5,9 @@
 
 # Library files
 /node_modules
+
+# Documentation
+/docs
+
+# Compiled sources
+/lib
