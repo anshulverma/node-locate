@@ -39,7 +39,7 @@
     "nlocate": "./bin/nlocate"
   },
   "engines": {
-    "node": ">= 0.8.0",
+    "node": ">= 0.10.0",
     "npm": ">= 1.1.65"
   },
   "directories": {
