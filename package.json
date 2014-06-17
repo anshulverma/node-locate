@@ -20,12 +20,9 @@
     "coffee-script": "1.7.1",
     "minimist": "0.1.0"
   },
-  "devDependencies": {
-    "chai": "1.9.1",
-    "mocha": "1.20.1",
-    "docco": "0.6.3"
-  },
-  "bundledDependencies": [],
+  "bundledDependencies": [
+    "minimist"
+  ],
   "keywords": [
     "cli",
     "nlocate",
