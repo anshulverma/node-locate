@@ -11,6 +11,7 @@ node-locate
     - [Usage](#usage)
         - [As a command line tool](#as-a-command-line-tool)
         - [As a module within another](#as-a-module-within-another)
+    - [Contributing](#contributing)
     - [Author](#author)
 
 <!-- markdown-toc end -->
@@ -56,7 +57,6 @@ try {
 `node-locate` also supports the callback pattern which lets you avoid the ugly try-catch block:
 
 ``` js
-
 locate('some-command', function(err, cmdPath) {
   if (err) {
     console.err('unable to find command');
@@ -65,6 +65,12 @@ locate('some-command', function(err, cmdPath) {
   }
 });
 ```
+
+## Contributing
+
+Feel free to make a change and issue a pull request if you have a patch.
+
+If you have a feature request or if you find a bug, please open a issue.
 
 ## Author
 
