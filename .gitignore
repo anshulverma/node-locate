@@ -11,3 +11,6 @@
 
 # Compiled sources
 /lib
+
+# Coverage
+coverage/
