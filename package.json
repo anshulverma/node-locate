@@ -10,7 +10,8 @@
     "Anshul Verma <anshul.verma86@gmail.com>"
   ],
   "scripts": {
-    "test": "cake test"
+    "test": "grunt test",
+    "prepublish": "grunt build"
   },
   "repository": {
     "type": "git",
