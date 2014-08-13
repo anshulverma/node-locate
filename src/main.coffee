@@ -13,6 +13,7 @@ module.exports = (name, options={}, callback=DEFAULT_CALLBACK) ->
     else locate name, options, callback
 
 locate = (name, options, callback) ->
+  checkDefined name, 'no command name given'
   pathList = process.env.PATH.split(SEPARATOR)
 
   errorCount = 0
