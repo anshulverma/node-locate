@@ -1,21 +1,39 @@
 {resolve} = require 'path'
-{existsSync} = require 'fs'
+{exists} = require 'fs'
+{checkDefined} = require 'node-preconditions'
 
 SEPARATOR = ':'
 DEFAULT_CALLBACK = (err, cmd) ->
-  throw err if err?
-  return cmd
+  if err? then console.error err.message
+  else console.log cmd
 
 module.exports = (name, options={}, callback=DEFAULT_CALLBACK) ->
-  sysPath = process.env.PATH
-  return callback(new Error 'system path not set') if !sysPath
+  checkDefined process.env.PATH, 'system path not set', (err) ->
+    if err? then callback err
+    else locate name, options, callback
 
-  for searchPath in sysPath.split(SEPARATOR)
-    cmd = resolve(searchPath, name)
-    return callback(null, cmd) if existsSync cmd
+locate = (name, options, callback) ->
+  pathList = process.env.PATH.split(SEPARATOR)
+
+  errorCount = 0
+  foundCommands = []
+  handleCommand = (cmd) ->
+    unless ~foundCommands.indexOf(cmd)
+      callback null, cmd
+      foundCommands.push cmd
+
+  handleError = ->
+    if errorCount++ is pathList.length
+      callback new Error "'#{name}' not found"
+
+  checkExistance = (cmd) ->
+    exists cmd, (found) -> if found then handleCommand(cmd) else do handleError
+
+  for searchPath in pathList
+    cmd = resolve searchPath, name
+    checkExistance cmd
 
   localPath = options.localPath || resolve __dirname, '../node_modules/.bin'
   cmdPath = resolve localPath, name
-  return callback(null, cmdPath) if existsSync cmdPath
-
-  return callback(new Error "'#{name}' not found")
+  exists cmdPath, (found) ->
+    if found then handleCommand(cmdPath) else do handleError

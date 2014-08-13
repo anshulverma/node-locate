@@ -5,8 +5,9 @@ module.exports = (grunt) ->
     env:
       options:
         concat:
-          value: 'node_modules/.bin'
-          delimiter: ':'
+          PATH:
+            value: 'node_modules/.bin'
+            delimiter: ':'
       dev:
         NODE_ENV: 'development'
       coverage:

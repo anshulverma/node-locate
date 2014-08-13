@@ -1,9 +1,15 @@
 describe 'environment', ->
   describe 'check system properties', ->
-    it 'system path should be set', ->
-      path = process.env.PATH
+    before ->
+      @path = process.env.PATH
       delete process.env.PATH
+
+    after ->
+      process.env.PATH = @path
+
+    it 'system path should be set', (done) ->
       locate 'ls', null, (err, cmd) ->
+        assert.isNotNull err, 'expected error for missing system PATH'
         assert.equal 'system path not set', err.message, 'invalid error message'
         assert.isUndefined cmd
-      process.env.PATH = path
+        do done

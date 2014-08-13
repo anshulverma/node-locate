@@ -16,7 +16,10 @@
     "type": "git",
     "url": "https://github.com/anshulverma/node-locate"
   },
-  "dependencies": {},
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "node-preconditions": "^2.2.2"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "coffeelint": "^1.5.3",
