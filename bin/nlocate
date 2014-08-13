@@ -4,7 +4,7 @@
   require('coffee-script/register');
   var argv = require('minimist')(process.argv.slice(2));
 
-  var locate = require('../src/main');
+  var locate = require('../lib/main');
   var name = argv['_'][0];
   try {
     locate(name, {}, function(err, cmd) {
