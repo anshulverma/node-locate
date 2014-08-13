@@ -1,6 +1,6 @@
 {
   "name": "node-locate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./lib/main",
   "preferGlobal": "true",
   "description": "Locate commands by searching through local node_modules and system path",
