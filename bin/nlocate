@@ -4,4 +4,10 @@ var minimist = require('minimist');
 var cli = require('../lib/cli');
 
 var argv = minimist(process.argv.slice(2));
-cli.exec(argv._[0]);
+cli.exec(argv._[0], function(err, cmd) {
+  if(err != null) {
+    console.error('Error: ' + err.message);
+    process.exit(1);
+  }
+  console.log(cmd);
+});

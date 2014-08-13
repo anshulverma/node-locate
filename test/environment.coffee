@@ -8,7 +8,7 @@ describe 'environment', ->
       process.env.PATH = @path
 
     it 'system path should be set', (done) ->
-      locate 'ls', null, (err, cmd) ->
+      cli.exec 'ls', {}, (err, cmd) ->
         assert.isNotNull err, 'expected error for missing system PATH'
         assert.equal 'system path not set', err.message, 'invalid error message'
         assert.isUndefined cmd
