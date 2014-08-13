@@ -10,3 +10,12 @@
 
 # Tag maps
 -*.map
+
+# Compiled source
+-lib/
+
+# Documentation
+-docs/
+
+# Coverage
+-coverage/
