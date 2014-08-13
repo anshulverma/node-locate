@@ -1,7 +1,7 @@
 {
   "name": "node-locate",
   "version": "0.0.1",
-  "main": "./bin/nlocate",
+  "main": "./lib/main",
   "preferGlobal": "true",
   "description": "Locate commands by searching through local node_modules and system path",
   "private": false,
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "minimist": "^1.1.0",
-    "node-preconditions": "^2.2.2"
+    "node-preconditions": "^2.2.3"
   },
   "devDependencies": {
     "chai": "^1.9.1",
