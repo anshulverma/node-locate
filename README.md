@@ -3,6 +3,10 @@ node-locate
 
 [![Build Status](https://travis-ci.org/anshulverma/node-locate.svg?branch=master)](https://travis-ci.org/anshulverma/node-locate)
 [![Dependency Status](https://gemnasium.com/anshulverma/node-locate.svg)](https://gemnasium.com/anshulverma/node-locate)
+[![Coverage Status](https://coveralls.io/repos/anshulverma/node-locate/badge.png?branch=master)](https://coveralls.io/r/anshulverma/node-locate?branch=master)
+[![NPM version](https://badge.fury.io/js/node-locate.svg)](http://badge.fury.io/js/node-locate)
+
+[![NPM](https://nodei.co/npm/node-locate.png?stars=true&downloads=true)](https://nodei.co/npm/node-locate/)
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
 **Table of Contents**
