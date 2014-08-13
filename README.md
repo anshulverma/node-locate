@@ -4,7 +4,7 @@ node-locate
 [![Build Status](https://travis-ci.org/anshulverma/node-locate.svg?branch=master)](https://travis-ci.org/anshulverma/node-locate)
 [![Dependency Status](https://gemnasium.com/anshulverma/node-locate.svg)](https://gemnasium.com/anshulverma/node-locate)
 
-<!-- markdown-toc start - Don't edit this section. Run M-x mardown-toc/generate-toc again -->
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
 **Table of Contents**
 
 - [node-locate](#node-locate)
@@ -13,6 +13,7 @@ node-locate
         - [As a module within another](#as-a-module-within-another)
     - [Contributing](#contributing)
     - [Author](#author)
+    - [License](#license)
 
 <!-- markdown-toc end -->
 
@@ -77,3 +78,27 @@ If you have a feature request or if you find a bug, please open a issue.
 [Anshul Verma](http://anshulverma.github.io/) ::
 [anshulverma](https://github.com/anshulverma) ::
 [@anshulverma](http://twitter.com/anshulverma)
+
+## License
+The MIT License (MIT)
+
+Copyright (c) 2014 Anshul Verma
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
