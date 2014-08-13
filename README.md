@@ -17,15 +17,15 @@ node-locate
 
 <!-- markdown-toc end -->
 
-Locate path to a command in your system. This module also keeps track of commands in `node_modules`
-folder.
+Locate path to a command in your system. This module also keeps track of
+commands in `node_modules` folder.
 
 ## Usage
 
 ### As a command line tool
 
-If you just want to use this utility as a command line tool, simply install this module with the
-`-g` flag:
+If you just want to use this utility as a command line tool, simply
+install this module with the `-g` flag:
 
 ``` bash
 $ npm install -g node-locate
@@ -42,7 +42,8 @@ $ nlocate non-existent  # this command does not exist
 
 ### As a module within another
 
-In some cases you may need to use `node-locate` within some other module. This is as simple as:
+In some cases you may need to use `node-locate` within some other
+module. This is as simple as:
 
 ``` js
 var locate = require('node-locate');
@@ -55,7 +56,8 @@ try {
 }
 ```
 
-`node-locate` also supports the callback pattern which lets you avoid the ugly try-catch block:
+`node-locate` also supports the callback pattern which lets you avoid
+the ugly try-catch block:
 
 ``` js
 locate('some-command', function(err, cmdPath) {
